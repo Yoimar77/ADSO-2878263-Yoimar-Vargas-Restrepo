@@ -34,15 +34,16 @@ const makeCharacter = (myCharacter)=> {
     cardContent.appendChild(nameCard);
     cardContent.appendChild(quoteCard);
 
-    containercards = appendChild(card);
+    containercards.appendChild(card);
        
 }
-btnGenerateCard.addEventListener("click",getCharacter);
-btnGenerateMultiple.addEventListener("click",generateCards);
-
 const generateCards =() => {
     let counter = parseInt(prompt("¿Cuántas cards deseas generar?"));
     for (let i = 0; i < counter; i++) {
         getCharacter();
     }
 }
+btnGenerateCard.addEventListener("click",getCharacter);
+btnGenerateMultiple.addEventListener("click",generateCards);
+
+
